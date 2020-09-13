@@ -1,0 +1,16 @@
+<div class ="login">
+  <h2><%= @app_name %></h2>
+  </br>
+  <form action="/login" method="post">
+    <div class="form-group">
+      <label for="formGroupExampleInput">Email</label>
+      <input type="text" name="email" class="form-control" id="formGroupExampleInput" placeholder="メールアドレスを入力して下さい。" >
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">Password</label>
+      <input type="text" name="password" class="form-control" id="formGroupExampleInput2" placeholder="パスワードを入力して下さい。">
+      </br>
+    </div>
+    <button type="submit" class="btn btn-outline-dark">ログイン</button>
+  </form>
+</div>

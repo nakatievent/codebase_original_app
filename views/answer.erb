@@ -1,0 +1,29 @@
+<div class="card">
+  <% if @ans == @answer %>
+  <h3 class="card-header">正解！</h3>
+  <div class="card-body">
+    <p class="card-text"><%= @explanation %></p>
+
+    <% if @question_id < 5 %>
+    <button type="button" class="btn btn-secondary"
+      onclick="location.href='/question/<%= @question_id + 1 %>'">次の問題に進む</button>
+    <% else %>
+    <button type="button" class="btn btn-secondary" onclick="location.href='/result'">結果画面へ進む</button>
+    <% end %>
+  </div>
+
+  <% else %>
+  <h3 class="card-header">残念！</h3>
+  <div class="card-body">
+    <h4 class="card-title">正解は<span class="answer"><%= @answer %></span></h4>
+    <p class="card-text"><%= @explanation %></p>
+
+    <% if @question_id < 5 %>
+    <button type="button" class="btn btn-secondary"
+      onclick="location.href='/question/<%= @question_id + 1 %>'">次の問題に進む</button>
+    <% else %>
+    <button type="button" class="btn btn-secondary" onclick="location.href='/result'">結果画面へ進む</button>
+    <% end %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+<div class="mypage">
+
+  <div class="profile_picture">
+    <% if @img %>
+      <img src="/image/<%= @img["content"] %>" class="img-thumbnail">
+    <% end %>
+  </div>
+
+  <br>
+  
+  <form action="/mypage" method="post" enctype="multipart/form-data">
+    <div>
+      <label for="img"></label>
+      <input type="file" name="img">
+      <button type="submit" class="btn btn-outline-dark">プロフィール画像を設定する</button>
+    </div>
+    <br>
+  </form>
+
+  <div class="start">
+    <h1 class="animated zoomIn h2">Hello! <%= @name %>さん🤣</h2>
+    <br>
+  </div>
+
+  <div class="start_and_logout">
+    <button type="button" class="btn btn-danger" onclick="location.href='/question/1'">一問一答を始める</button>
+    <div class="signout">
+      <% if session[:user] %>
+      <form action="/signout" method="post">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="submit" value="ログアウト" class="btn btn-danger">
+      </form>
+      <% end %>
+    </div>
+  </div>
+</div>

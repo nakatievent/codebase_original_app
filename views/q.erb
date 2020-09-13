@@ -1,0 +1,23 @@
+<div class="card">
+  <div class="card-header">一問一答アプリ　練習問題</div>
+  
+  <div class="card-body">
+    <h4 class="card-title">問題<%= @number %></h4>
+    <p class="card-text"><%= @question %></p>
+  </div>
+  
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+    <button type="submit" class="btn btn-success" id="check">⇒</button>
+  </div>
+  
+  <br>
+
+  <div class ="answer" id="answer">
+    <p class="card-text">答え：<%= @answer %></p>
+    <button type="button" class="btn btn-secondary" onclick="location.href='/question/2'">次の問題に進む</button>
+  </div>
+</div>
+
+</div>
+

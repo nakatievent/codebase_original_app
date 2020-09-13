@@ -1,0 +1,29 @@
+<div class="card">
+  <h3 class="card-header">お疲れ様でした！</h3>
+
+    <div class="card-body">
+      <h4 class="card-title">あなたの点数は<span class="result animated zoomIn h2"><%= @total_score %></span>点です！</h4>
+      <% if @total_score == 0 %>
+      <p class="card-text">もっと頑張りましょう！</p>
+      <% elsif @total_score == 5 %>
+      <p class="card-text">全問正解です！頑張りましたね！</p>
+      <% else %>
+      <p class="card-text">まあまあですね！次は満点目指して頑張りましょう。</p>
+      <% end %>      
+    </div>
+
+    <div class="i">
+
+    <input type="button" value="マイページに戻る" class="btn btn-outline-secondary" onclick="location.href='/mypage'">
+
+    <div class="signout">
+      <% if session[:user] %>
+      <form action="/signout" method="post">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="submit" value="ログアウト" class="btn btn-outline-secondary">
+      </form>
+      <% end %>
+    </div>
+  </div>
+  <br>
+</div>

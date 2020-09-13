@@ -1,0 +1,31 @@
+<div class="top">
+
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link active" href="#!">新規登録</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#!">使い方</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#!">一問一答Webアプリとは</a>
+    </li>
+  </ul>
+
+  <!-- <div class="login">
+    <h2><%= @top_page %></h2>
+    <p>このWebアプリケーションでは、一問一答を通して様々な知識を身につけることができます。あなたも一問一答に挑戦してみよう！</p>
+    <button type="button" class="btn btn-warning"><a href="/login">ログインする</a></button>    
+  </div> -->
+  <div class="card">
+    <h3 class="card-header"><%= @top_page %></h3>
+    <div class="card-body">
+      <!-- <h4 class="card-title">ようこそ！</h4> -->
+      <img src="/image/088719.jpg" class="picture">
+      <p></p>
+      <p class="card-text">このWebアプリケーションでは、一問一答を通して様々な知識を身につけることができます。あなたも一問一答に挑戦してみよう！</p>
+      <button type="button" class="btn btn-info" onclick="location.href='/signup'">新規登録</button>
+      <button type="button" class="btn btn-info" onclick="location.href='/login'">ログイン</button>
+    </div>
+  </div>
+</div>
