@@ -1,8 +1,1 @@
-このアプリはcodebase沖縄で作ったオリジナルアプリです。
-
-
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-
-fafaf
-
-afafafa
+このアプリはcodebase沖縄で作った一問一答オリジナルアプリです。
